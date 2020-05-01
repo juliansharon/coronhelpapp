@@ -36,10 +36,6 @@ public class fund extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(),help.class));
                         overridePendingTransition(0,0);
                         return true;
-                    case R.id.hospital:
-                        startActivity(new Intent(getApplicationContext(),hospital.class));
-                        overridePendingTransition(0,0);
-                        return true;
                     case R.id.vehicle:
                         startActivity(new Intent(getApplicationContext(),pass.class));
                         overridePendingTransition(0,0);
@@ -48,5 +44,9 @@ public class fund extends AppCompatActivity {
                 return false;
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+        return;
     }
 }

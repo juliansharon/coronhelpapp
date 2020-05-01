@@ -35,11 +35,6 @@ public class help extends AppCompatActivity {
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.help:
-
-                        return true;
-                    case R.id.hospital:
-                        startActivity(new Intent(getApplicationContext(),hospital.class));
-                        overridePendingTransition(0,0);
                         return true;
                     case R.id.vehicle:
                         startActivity(new Intent(getApplicationContext(),pass.class));
@@ -49,5 +44,9 @@ public class help extends AppCompatActivity {
                 return false;
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+        return;
     }
 }

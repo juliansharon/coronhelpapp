@@ -38,16 +38,16 @@ public class pass extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(),help.class));
                         overridePendingTransition(0,0);
                         return true;
-                    case R.id.hospital:
-                        startActivity(new Intent(getApplicationContext(),hospital.class));
-                        overridePendingTransition(0,0);
-                        return true;
                     case R.id.vehicle:
-
                         return true;
                 }
                 return false;
             }
         });
+
+    }
+    @Override
+    public void onBackPressed() {
+        return;
     }
 }
