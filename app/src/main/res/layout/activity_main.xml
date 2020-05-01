@@ -5,52 +5,75 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/image"
+        android:src="@drawable/icon"
+        android:layout_marginTop="50dp">
+
+    </ImageView>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CORONA HELP APP"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
         android:textSize="30dp"
         android:layout_centerHorizontal="true"
-        android:id="@+id/topic">
-
+        android:id="@+id/topic"
+        android:layout_below="@id/image"
+        >
     </TextView>
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginTop="40dp"
         android:hint="NAME"
+        android:layout_centerHorizontal="true"
         android:layout_below="@id/topic"
-        android:id="@+id/name">
+        android:id="@+id/name"
+        android:background="@drawable/border"
+        android:padding="10dp">
 
     </EditText>
     <EditText
-    android:layout_width="match_parent"
-    android:layout_height="40dp"
-    android:layout_marginTop="40dp"
-    android:hint="mobile number"
-    android:inputType="number"
-    android:layout_below="@id/name"
-    android:id="@+id/mobileno">
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:hint="mobile number"
+        android:inputType="number"
+        android:layout_below="@id/name"
+        android:id="@+id/mobileno"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        >
 
     </EditText>
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginTop="40dp"
         android:hint="Address"
+        android:layout_centerHorizontal="true"
         android:layout_below="@id/mobileno"
-        android:id="@+id/address">
+        android:id="@+id/address"
+        android:background="@drawable/border"
+        android:padding="10dp">
 
     </EditText>
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_below="@+id/address"
         android:id="@+id/people"
         android:inputType="number"
         android:layout_marginTop="40dp"
-        android:hint="No of people">
+        android:layout_centerHorizontal="true"
+        android:hint="No of people"
+        android:background="@drawable/border"
+        android:padding="10dp">
 
     </EditText>
     <Button
@@ -60,13 +83,12 @@
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:text="submit"
-        android:id="@+id/submit">
+        android:textColor="#fff"
+        android:id="@+id/submit"
+        android:background="@drawable/button"
+        android:padding="20dp">
 
     </Button>
 
-
-
-
-
-
 </RelativeLayout>
+
