@@ -29,14 +29,34 @@
     android:layout_height="40dp"
     android:layout_marginTop="40dp"
     android:hint="mobile number"
+    android:inputType="number"
     android:layout_below="@id/name"
     android:id="@+id/mobileno">
+
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:hint="Address"
+        android:layout_below="@id/mobileno"
+        android:id="@+id/address">
+
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/address"
+        android:id="@+id/people"
+        android:inputType="number"
+        android:layout_marginTop="40dp"
+        android:hint="No of people">
 
     </EditText>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/mobileno"
+        android:layout_below="@+id/people"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:text="submit"
