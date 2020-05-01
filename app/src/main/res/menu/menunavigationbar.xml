@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-j
+    <item
+        android:id="@+id/home"
+        android:title="home"
+        android:icon="@drawable/ic_home_black_24dp"/>
+    <item
+        android:id="@+id/hospital"
+        android:title="hospital"
+        android:icon="@drawable/ic_local_hospital_black_24dp"/>
+    <item
+        android:id="@+id/food"
+        android:title="food"
+        android:icon="@drawable/ic_restaurant_black_24dp"/>
+    <item
+        android:id="@+id/vehicle"
+        android:title="pass"
+        android:icon="@drawable/ic_vehicle"/>
+    <item
+        android:id="@+id/fund"
+        android:title="fund"
+        android:icon="@drawable/ic_attach_money_black_24dp"/>
+    <item
+        android:id="@+id/help"
+        android:title="help"
+        android:icon="@drawable/ic_help_black_24dp"/>
+
+
+
 
 </menu>
