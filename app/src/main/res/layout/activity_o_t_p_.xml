@@ -29,7 +29,7 @@ android:layout_below="@id/image"
 </TextView>
 
 <EditText
-android:id="@+id/maildid"
+android:id="@+id/mailid"
 android:layout_width="300dp"
 android:layout_height="40dp"
 android:layout_below="@id/topic"
@@ -37,6 +37,7 @@ android:layout_centerHorizontal="true"
 android:layout_marginTop="37dp"
 android:background="@drawable/border"
 android:hint="Email id"
+android:inputType="textEmailAddress"
 android:padding="10dp">
 
 </EditText>
@@ -46,8 +47,8 @@ android:layout_width="300dp"
 android:layout_height="40dp"
 android:layout_marginTop="40dp"
 android:hint="Password"
-android:inputType="number"
-android:layout_below="@id/maildid"
+android:inputType="textPassword"
+android:layout_below="@id/mailid"
 android:id="@+id/password"
 android:layout_centerHorizontal="true"
 android:background="@drawable/border"
