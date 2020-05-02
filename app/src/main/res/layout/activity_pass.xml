@@ -8,10 +8,79 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pass"
-        android:layout_centerInParent="true"
-        android:textSize="50dp"
+        android:text="Pass for vehicles"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/topicpass"
         ></TextView>
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topicpass"
+        android:layout_centerHorizontal="true"
+        android:hint="NAME"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:id="@+id/passname">
+    </EditText>
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passname"
+        android:layout_centerHorizontal="true"
+        android:hint="PURPOSE"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:id="@+id/passpurspose">
+    </EditText>
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passpurspose"
+        android:layout_centerHorizontal="true"
+        android:hint="DATE"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:id="@+id/passdate">
+    </EditText>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="request pass"
+        android:layout_below="@id/passdate"
+        android:background="@drawable/button"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="90dp"
+        android:id="@+id/requestpass">
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="generate qr"
+        android:layout_toRightOf="@+id/requestpass"
+        android:layout_below="@+id/passdate"
+        android:background="@drawable/button"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/qrcode">
+    </Button>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/requestpass"
+        android:id="@+id/qrimage"
+        android:layout_marginTop="20dp">
+    </ImageView>
+
+
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
