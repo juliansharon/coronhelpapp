@@ -1,45 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".OTP_Activity">
+    <ImageView
+    android:id="@+id/image"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="28dp"
+    android:src="@drawable/icon">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="112dp"
-        android:text="Sign In"
-        android:textSize="32sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+</ImageView>
 
-    </TextView>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Sign in"
+android:layout_marginTop="20dp"
+android:textSize="30dp"
+android:layout_centerHorizontal="true"
+android:id="@+id/topic"
+android:layout_below="@id/image"
+    >
+</TextView>
 
-    <EditText
-        android:id="@+id/otp"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="76dp"
-        android:background="@drawable/border"
-        android:hint="OTP"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+<EditText
+android:id="@+id/maildid"
+android:layout_width="300dp"
+android:layout_height="40dp"
+android:layout_below="@id/topic"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="37dp"
+android:background="@drawable/border"
+android:hint="Email id"
+android:padding="10dp">
 
+</EditText>
+
+<EditText
+android:layout_width="300dp"
+android:layout_height="40dp"
+android:layout_marginTop="40dp"
+android:hint="Password"
+android:inputType="number"
+android:layout_below="@id/maildid"
+android:id="@+id/password"
+android:layout_centerHorizontal="true"
+android:background="@drawable/border"
+android:padding="10dp"
+    >
+</EditText>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="60dp"
-        android:id="@+id/login"
-        android:text="Login"
-        android:background="@drawable/button"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="sign in"
         android:textColor="#fff"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/otp" />
+        android:id="@+id/loginbutton"
+        android:background="@drawable/button"
+        android:padding="20dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dont have an account?sign up here"
+        android:layout_below="@+id/loginbutton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:id="@+id/signupintent">
+
+    </TextView>
+
+</RelativeLayout>

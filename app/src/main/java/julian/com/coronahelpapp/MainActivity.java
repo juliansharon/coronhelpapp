@@ -8,6 +8,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     EditText name,mobile,address,people;
     Button submit;
     String num,per_name,add,locals;
+    TextView signin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +28,13 @@ public class MainActivity extends AppCompatActivity {
         address=findViewById(R.id.address);
         people=findViewById(R.id.email);
         submit=findViewById(R.id.submit);
+        signin=findViewById(R.id.loginintent);
+        signin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),OTP_Activity.class));
+            }
+        });
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,13 +49,14 @@ public class MainActivity extends AppCompatActivity {
                 }else if(num.length()>10||num.length()<10){
                     Toast.makeText(MainActivity.this,"Please Enter valid number",Toast.LENGTH_SHORT).show();
                 }else{
-                    Intent in = new Intent(MainActivity.this,OTP_Activity.class);
+                    Intent in = new Intent(MainActivity.this,home.class);
                     in.putExtra("num",num);
                     startActivity(in);
                 }
 
             }
         });
+
     }
 
     @Override
@@ -58,5 +68,10 @@ public class MainActivity extends AppCompatActivity {
             in.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(in);
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        return;
     }
 }

@@ -103,13 +103,24 @@
         android:layout_below="@+id/pswd"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
-        android:text="submit"
+        android:text="sign up"
         android:textColor="#fff"
         android:id="@+id/submit"
         android:background="@drawable/button"
         android:padding="20dp">
 
     </Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="already have an account?sign in here"
+            android:layout_below="@+id/submit"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:id="@+id/loginintent">
+
+        </TextView>
 
     </RelativeLayout>
 
