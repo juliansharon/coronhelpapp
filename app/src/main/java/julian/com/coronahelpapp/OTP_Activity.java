@@ -28,7 +28,7 @@ public class OTP_Activity extends AppCompatActivity {
 
     String verifyid;
     EditText otp;
-    Button login_btn;
+    Button login;
     private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,11 +36,11 @@ public class OTP_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_o_t_p_);
         mAuth = FirebaseAuth.getInstance();
         otp=findViewById(R.id.otp);
-        login_btn=findViewById(R.id.login);
+        login=findViewById(R.id.login);
         String ph_no="+91"+getIntent().getStringExtra("num");
         sendverification(ph_no);
 
-        login_btn.setOnClickListener(new View.OnClickListener() {
+        login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String code = otp.getText().toString();

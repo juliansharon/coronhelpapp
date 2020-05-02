@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         name=findViewById(R.id.name);
         mobile=findViewById(R.id.mobileno);
         address=findViewById(R.id.address);
-        people=findViewById(R.id.people);
+        people=findViewById(R.id.email);
         submit=findViewById(R.id.submit);
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
